@@ -19,6 +19,6 @@ public class FixedRateProducer
     public void produce()
     {
         log.info("Value of i being sent: {}", i);
-        kafkaTemplate.send("t_fixedrate", "Message no. " + i++);
+        kafkaTemplate.send("t_fixedrate_2", "Message no. " + i++);
     }
 }
