@@ -1,5 +1,6 @@
 package com.course.kafkaproducer.service;
 
+import com.course.kafkaproducer.dummythirdpartyservices.CommodityService;
 import com.course.kafkaproducer.entity.Commodity;
 import com.course.kafkaproducer.producer.CommodityProducer;
 import lombok.AllArgsConstructor;

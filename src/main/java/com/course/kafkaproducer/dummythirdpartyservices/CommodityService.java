@@ -1,4 +1,4 @@
-package com.course.kafkaproducer.service;
+package com.course.kafkaproducer.dummythirdpartyservices;
 
 import com.course.kafkaproducer.entity.Commodity;
 import org.springframework.stereotype.Service;
