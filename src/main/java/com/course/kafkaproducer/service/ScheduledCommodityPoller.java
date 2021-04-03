@@ -5,11 +5,10 @@ import com.course.kafkaproducer.producer.CommodityProducer;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+//@Service
 @AllArgsConstructor
 @Slf4j
 public class ScheduledCommodityPoller
@@ -23,7 +22,7 @@ public class ScheduledCommodityPoller
     public void poll()
     {
         String commodityName = i++ % 2 == 0? "gold": "silver";
-        List<Commodity> commodities = service.createDummyCommodities(2, commodityName);
+        List<Commodity> commodities = service.createDummyCommodities(1, commodityName);
         log.info("Commodities polled: {}", commodities);
 
         commodities.forEach(producer::produce);
