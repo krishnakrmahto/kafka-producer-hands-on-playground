@@ -20,7 +20,6 @@ public class KafkaProducerApplication implements CommandLineRunner
 		SpringApplication.run(KafkaProducerApplication.class, args);
 	}
 
-
 	@Override
 	public void run(String... args) throws Exception
 	{
